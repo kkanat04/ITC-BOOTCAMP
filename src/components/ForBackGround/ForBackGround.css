@@ -1,0 +1,52 @@
+
+.forBackGround {
+    position: relative;
+}
+
+.forBackGround__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.action {
+    opacity: 0.9;
+}
+.front__opacity {
+    background-image: linear-gradient(180deg, rgba(26, 26, 26, 0) 50%, #1A1A1A 90%);
+}
+
+@media (max-width: 1024px) {
+    video{
+        display: none;
+    }
+    .forBackGround{
+        background-image: url("/src/img/bg-main.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+
+}
+
+@media (max-width: 576px) {
+    .forBackGround{
+        background-image: url("/src/img/bg-main.png");
+        background-repeat: no-repeat;
+        background-size: 100% 80%;
+    }
+}
+@media (max-width: 375px) {
+
+}
+@media (max-width: 320px) {
+
+}

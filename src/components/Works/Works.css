@@ -1,0 +1,145 @@
+.works {
+    padding: 100px 0 50px 0;
+}
+
+.works h2 {
+    padding-bottom: 65px;
+}
+
+.works__box {
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+    background: #393D47;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.works .row {
+    grid-row-gap: 40px;
+}
+
+.works__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.works__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    padding: 20px 0;
+}
+
+.works__date {
+    font-size: 24px;
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+
+.works__nav {
+    font-weight: 500;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.works__bg {
+    border-radius: 25px;
+    height: 100%;
+}
+
+.works__bg-1 {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+}
+
+.works__bg-2 {
+    background: linear-gradient(to right, #108dc7, #ef8e38);
+}
+
+.works__bg-3 {
+    background: linear-gradient(to left, #dce35b, #45b649);
+}
+
+.works__bg-4 {
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.works__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 70px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+
+}
+
+
+.works__bg:hover .works__box {
+    height: 98%;
+    width: 98%;
+}
+
+
+@media (max-width: 1024px) {
+    .works__title {
+        font-size: 32px;
+    }
+
+    .works__box {
+        height: 98%;
+        width: 98%;
+        pointer-events: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .works__title {
+        font-size: 48px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .works__box {
+        padding: 30px;
+    }
+
+    .works__circle {
+        width: 79px;
+        height: 79px;
+    }
+
+    .works__circle img {
+        width: 52.5px;
+        height: 50.63px;
+    }
+
+    .works__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .works__date {
+        font-size: 16px;
+    }
+
+    .works__nav {
+        font-size: 18px;
+    }
+
+    .works__nav img {
+        height: 18px;
+        padding-left: 10px;
+    }
+}
+
+

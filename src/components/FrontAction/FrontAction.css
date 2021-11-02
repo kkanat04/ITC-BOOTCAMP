@@ -1,0 +1,168 @@
+.frontAction {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.frontAction__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frontAction__text div {
+    width: 65%;
+}
+
+.frontAction__text {
+    width: 60%;
+}
+
+.frontAction h1 {
+    font-size: 64px;
+    line-height: 76px;
+}
+
+.frontAction p {
+    padding-bottom: 70px;
+}
+
+.frontAction__gif {
+    width: 240px;
+    height: 240px;
+    background: rgba(57, 61, 71, 0.9);
+    box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 0.30), 5px 5px 20px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .frontAction__text div {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .frontAction__gif {
+        margin-right: 0;
+        animation: unset;
+    }
+
+    .frontAction__text div {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .frontAction__text div {
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .frontAction__text div {
+        width: 70%;
+    }
+
+    .frontAction {
+        text-align: center;
+    }
+
+    .frontAction__wrap {
+        flex-wrap: wrap;
+    }
+
+    .frontAction__text {
+        order: 2;
+        width: 100%;
+    }
+
+    .frontAction__gif {
+        order: 1;
+        margin: 0 auto;
+    }
+
+    .frontAction__text div {
+        margin: 0 auto;
+    }
+
+
+    .frontAction__text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .frontAction__text div {
+        width: 100%;
+    }
+
+    .frontAction h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+
+    .frontAction__gif {
+        margin-top: 60px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .frontAction__gif img {
+        height: 100px;
+    }
+
+    .frontAction p {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+
+
+    .frontAction h1 {
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .frontAction__text div {
+        width: 85%;
+        font-size: 12px;
+    }
+    .frontAction p {
+        padding-bottom: 25px;
+    }
+
+    .frontAction__gif {
+        width: 150px;
+        height: 150px;
+    }
+
+    .frontAction__gif img {
+        height: 90px;
+    }
+
+    .frontAction h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 280px) {
+    .frontAction__text div {
+        width: 100%;
+    }
+}

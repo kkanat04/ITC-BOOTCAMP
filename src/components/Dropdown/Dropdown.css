@@ -1,0 +1,63 @@
+.dropdown {
+    padding: 50px 0;
+}
+
+.dropdown h2 {
+    padding-bottom: 50px;
+}
+
+.dropdown__title {
+    font-size: 20px !important;
+}
+
+.dropdown__list {
+    list-style-image: url("/src/img/elipse.png");
+    padding-left: 30px;
+}
+
+.dropdown__list li {
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.MuiAccordionSummary-content {
+    margin: 24px 10px !important;
+}
+
+
+
+
+@media (max-width: 576px) {
+
+
+    .dropdown__title {
+        font-size: 18px !important;
+    }
+
+    .dropdown__list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+    .dropdown__title {
+        font-size: 14px !important;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    .dropdown__title {
+        font-size: 13px !important;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .dropdown__title {
+        font-size: 11px !important;
+    }
+}
+

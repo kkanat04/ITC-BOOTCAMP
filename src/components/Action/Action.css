@@ -1,0 +1,34 @@
+.action {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.action h1 {
+    font-size: 64px;
+    line-height: 76px;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .action h1 {
+        font-size: 45px;
+        line-height: 57px;
+    }
+}
+
+
+@media(max-width: 375px){
+    .action h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 320px) {
+    .action h1 {
+        font-size: 35px;
+    }
+}

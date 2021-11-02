@@ -1,0 +1,120 @@
+.diploma {
+    padding: 100px 0;
+}
+
+.diploma__box {
+    width: 60%;
+    padding: 40px 50px;
+    border-radius: 25px;
+    background: rgba(57, 61, 71, 0.7);
+}
+
+.diploma__title {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.diploma ul {
+    list-style-image: url('/src/img/green.png');
+    padding-left: 15px;
+}
+
+.diploma ul li {
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 15px;
+}
+
+.diploma__wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diploma__box-2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+}
+
+.diploma__box-2 img {
+    margin-left: -60px;
+    z-index: 2;
+}
+
+
+@media (max-width: 1200px) {
+    .diploma__box-2 img {
+        margin-left: -28px;
+        width: 420px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .diploma__box-2 img {
+        margin-left: -28px;
+        width: 420px;
+    }
+}
+
+@media (max-width: 992px) {
+    .diploma__box, .diploma__box-2 {
+        width: 100%;
+    }
+
+    .diploma__box-2 {
+        justify-content: center;
+    }
+
+    .diploma__box-2 img {
+        margin-left: 0;
+        width: unset;
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .diploma__box-2 img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .diploma__box-2 img {
+        width: 320px;
+        margin-top: -20px;
+    }
+
+    .diploma ul li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .diploma__box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .diploma__box-2 img {
+        width: 270px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .diploma__box-2 img {
+        width: 250px;
+
+    }
+}
+
+@media (max-width: 280px) {
+    .diploma__box-2 img {
+        width: 220px;
+
+    }
+}

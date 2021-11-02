@@ -1,0 +1,25 @@
+
+.background {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.frontBackground {
+    background-image: url("/src/img/frontend-bg.png"), linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 9.9%);
+}
+
+.fullstackBackground {
+    background-image: url("/src/img/fullstack-bg.png"), linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 9.9%);
+}
+
+.backendBackground {
+    background-image: url("/src/img/backend-bg.png"), linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 9.9%);
+}
+
+.designBackground {
+    background-image: url("/src/img/ui-ux-bg.png"), linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1A1A1A 9.9%);
+}
+
+
+

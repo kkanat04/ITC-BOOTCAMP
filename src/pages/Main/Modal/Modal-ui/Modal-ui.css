@@ -1,0 +1,233 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.712);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modalContainer {
+    width: 500px;
+    height: 620px;
+    border-radius: 12px;
+    background: rgba(57, 61, 71, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 50px;
+}
+
+.modalContainer .footer button:disabled,
+.modalContainer .footer button[disabled] {
+    background-color: brown;
+    color: rgba(255, 255, 255, 0.342);
+    cursor: not-allowed;
+}
+
+.body {
+    flex-direction: column;
+}
+
+.lll {
+    width: 100%;
+    height: 500vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.inp {
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 15px;
+    width: 60%;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: white solid 1px;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .footer button {
+
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    background-color: brown;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    background-color: crimson;
+}
+
+.radioBlock {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px;
+    width: 100%;
+}
+
+.buttonFilials {
+    color: #fff;
+    padding: 3px;
+    width: 30%;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buttonFilials:hover {
+    color: #393D47;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.Filials {
+    padding-bottom: 16px;
+    font-weight: 300;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .modalContainer {
+        width: 340px;
+        height: auto;
+        padding: 15px 25px;
+    }
+    .modalBackground {
+       align-items: flex-start;
+    }
+
+    .modalContainer h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .body p {
+        font-size: 20px;
+    }
+
+    .inp {
+        margin-bottom:20px;
+        padding: 10px 0;
+        width: 80%;
+    }
+
+    .radioBlock {
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 10px;
+        justify-content: center;
+    }
+
+    .radioBlock div {
+        width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+    .modalContainer {
+        width: 330px;
+    }
+    .inp {
+        margin-bottom:10px;
+        padding: 10px 0;
+        width: 80%;
+    }
+    .modalContainer .footer button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalContainer {
+        width: 280px;
+        padding: 15px 10px;
+    }
+
+    .radioBlock {
+        grid-row-gap: 10px;
+    }
+
+    .modalContainer h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .buttonFilials {
+        font-size: 15px;
+    }
+
+    .radioBlock div {
+        width: 50%;
+    }
+
+    .titleCloseBtn button {
+        font-size: 18px;
+    }
+
+    .modalContainer .footer button {
+        width: 55%;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 280px) {
+    .modalContainer {
+        width: 260px;
+    }
+
+    body p {
+        font-size: 16px;
+    }
+
+    .radioBlock input {
+        margin-right: 3px;
+    }
+
+    .buttonLesson {
+        height: 40px;
+    }
+}

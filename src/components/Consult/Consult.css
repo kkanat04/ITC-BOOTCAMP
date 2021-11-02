@@ -1,0 +1,202 @@
+.consult {
+    padding: 100px 0 50px;
+    text-align: center;
+}
+
+.consult__branch {
+    margin: 10px auto 0;
+    padding: 35px 24px;
+    text-transform: capitalize;
+
+}
+
+.consult__header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.consult__radio {
+    display: flex;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.consult__branch > p {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+}
+
+.consult__radio input {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.consult__wrap {
+    padding: 40px 165px;
+    border-radius: 25px;
+    background: rgba(57, 61, 71, 0.7);
+
+}
+
+.consult__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 57px;
+}
+
+.consult__input input {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    padding: 11px 5px;
+    outline: none;
+}
+
+.consult button {
+    padding: 10px 28px;
+    border: none;
+    background-color: brown;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.consult button:disabled {
+    color: rgba(255, 255, 255, 0.342);
+    cursor: not-allowed;
+}
+
+.buttonFilialsFullStack {
+    color: #fff;
+    padding: 3px;
+    width: 25%;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buttonFilialsFullStack:hover {
+    color: rgba(57, 61, 71, 1);
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.ContentFilialsFullStack {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.consult__flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .consult__wrap {
+        padding: 40px 60px;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .consult__branch {
+        max-width: 50%;
+    }
+
+    .buttonFilialsFullStack {
+        width: 30%;
+        font-size: 20px;
+
+    }
+
+    .consult__branch {
+        max-width: 100%;
+        padding: 12px 24px;
+
+    }
+
+    .consult__input {
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+    }
+
+    .consult__input input {
+        width: 100%;
+    }
+
+    .consult button {
+        margin-top: 30px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .consult h2 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .consult__branch {
+        max-width: 80%;
+    }
+
+    .consult__wrap {
+        padding: 40px 30px;
+    }
+
+    .consult__branch > p {
+        font-size: 16px;
+    }
+
+    .consult__input {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .ContentFilialsFullStack {
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+
+    .buttonFilialsFullStack {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .consult__input input {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .consult__branch > p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 280px) {
+    .consult__branch {
+        max-width: 100%;
+    }
+
+    .consult__radio input {
+        margin-right: 3px;
+    }
+}

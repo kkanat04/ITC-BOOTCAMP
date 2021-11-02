@@ -1,0 +1,67 @@
+.program {
+    padding: 50px 0;
+}
+
+.program__wrap {
+    padding: 40px 50px;
+    border-radius: 25px;
+    background: rgba(57, 61, 71, 0.95);
+
+}
+
+.program__text {
+    padding-right: 20%;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.program__title {
+    margin: 15px 0;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.program__box li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.program__box ul {
+    list-style-image: url("/src/img/elipse.png");
+    padding-left: 15px;
+}
+
+.program__box li:last-child {
+    margin-bottom: 0;
+}
+
+
+.program__circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .program .row {
+        grid-row-gap: 50px;
+    }
+
+    .program__text {
+        padding-right: 0;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .program__wrap {
+        padding: 40px 30px;
+    }
+}
+

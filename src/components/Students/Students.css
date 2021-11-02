@@ -1,0 +1,86 @@
+.students {
+    padding: 50px 0;
+}
+
+.students h2 {
+    margin-bottom: 40px;
+}
+
+.students__wrap {
+    height: 500px;
+}
+
+.students__box {
+    box-shadow: 0px 0px 70px rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: ease height 1s;
+    height: 332px;
+}
+
+.students__box-1{
+    background-image:  url("/src/img/student-1.png");
+}
+.students__box-2{
+    background-image:  url("/src/img/student-2.png");
+}
+.students__box-3{
+    background-image:  url("/src/img/student-3.png");
+}
+
+.students__box:hover {
+    height: 450px;
+
+}
+
+.students__title {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .students__box {
+        pointer-events: none;
+
+    }
+    .students__wrap {
+        height: unset;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .students__box {
+        height: 550px;
+    }
+
+    .students .row {
+        grid-row-gap: 40px;
+    }
+    .students__title{
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .students__box {
+        height: 332px;
+    }
+
+    .students__box:hover {
+        height: 450px;
+
+    }
+    .students__title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+}
